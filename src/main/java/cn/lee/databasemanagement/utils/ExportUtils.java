@@ -49,7 +49,7 @@ public class ExportUtils {
 
             response.setCharacterEncoding("UTF-8");
             response.setContentType("application/octet-stream");
-            response.setHeader("Content-disposition", "attachment;filename=" + URLEncoder.encode("SMD.xlsx", "UTF-8"));
+            response.setHeader("Content-disposition", "attachment;filename=" + URLEncoder.encode("SMD.md", "UTF-8"));
             response.setContentType("application/x-download");
             ServletOutputStream outputStream = response.getOutputStream();
             outputStream.write(buffer);

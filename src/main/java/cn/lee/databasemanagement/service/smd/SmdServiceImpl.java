@@ -61,7 +61,7 @@ public class SmdServiceImpl implements SmdService {
             }
             Map<String, Object> map = new HashMap<>();
             map.put("list", list);
-            ExportUtils.exportExcelWithfreemarker("tableInfo.ftl", map, response);
+            ExportUtils.exportExcelWithfreemarker("tableInfoWithMd.ftl", map, response);
         } catch (Exception e) {
             e.printStackTrace();
         }
